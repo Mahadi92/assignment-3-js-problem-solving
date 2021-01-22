@@ -64,17 +64,21 @@ function hotelCost(day) {
 function megaFriend(friends) {
     var maxName = friends[0];
 
-    for (var i = 0; i < friends.length; i++) { //loop
+    if (typeof friends == 'object') { // valitation
 
-        var nameChar = friends[i];
+        for (var i = 0; i < friends.length; i++) { //loop
 
-        if (friends[i].length > maxName.length) { //logic
-            maxName = nameChar;
+            var nameChar = friends[i];
+
+            if (friends[i].length > maxName.length) { //logic
+                maxName = nameChar;
+            }
         }
+    } else {
+        maxName = "Error: Something wrong !!!";
     }
     return maxName;
 }
-
 
 // Valitation  function  ||  Extra features
 
