@@ -7,7 +7,7 @@ function kilometerToMeter(kilo) {
     if (valitation(kilo)) { //valitation
         var meter = kilo * 1000; //logic
     } else {
-        var meter = "Enter youer valid number !!! ";
+        var meter = "Error: Enter youer valid number !!! ";
     }
     return meter;
 }
@@ -25,7 +25,7 @@ function budgetCalculator(watch, phone, laptop) {
         var total = (watch * watchPrice) + (phone * phonePrice) + (laptop * laptopPrice); //logic
 
     } else {
-        total = "Enter your valid Price !!! ";
+        total = "Error: Enter your valid Price !!! ";
     }
     return total;
 }
@@ -53,7 +53,7 @@ function hotelCost(day) {
             cost = firstPart + secondPart + thirdPart;
         }
     } else {
-        cost = "Enter your valid cost";
+        cost = "Error: Enter your valid cost";
     }
     return cost;
 }
@@ -75,7 +75,8 @@ function megaFriend(friends) {
     return maxName;
 }
 
-//Valitation  function
+
+// Valitation  function  ||  Extra features
 
 function valitation(condition) {
     if (condition > 0 && typeof (condition) == 'number') {
