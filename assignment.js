@@ -38,9 +38,9 @@ function hotelCost(day) {
 
     if (valitation(day)) { //valitation
 
-        if (day <= 10) {
+        if (day <= 10) { // logic
             cost = day * 100;
-        } else if (day <= 20) {
+        } else if (day <= 20) { // logic
             var firstPart = 10 * 100;
             var remain = day - 10;
             var secondPart = remain * 80;
