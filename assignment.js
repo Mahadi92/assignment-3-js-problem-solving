@@ -1,14 +1,16 @@
+// https://github.com/Mahadi92/assignment-3-js-problem-solving
+
+
 // Kilometer To Meter
 
 function kilometerToMeter(kilo) {
-    if (valitation(kilo)) {
-        var meter = kilo * 1000;
+    if (valitation(kilo)) { //valitation
+        var meter = kilo * 1000; //logic
     } else {
         var meter = "Enter youer valid number !!! ";
     }
     return meter;
 }
-console.log(kilometerToMeter(3))
 
 
 //Budget Calculator
@@ -18,21 +20,23 @@ function budgetCalculator(watch, phone, laptop) {
     var phonePrice = 100;
     var laptopPrice = 500;
 
-    if (valitation(watch) && valitation(phone) && valitation(laptop)) {
-        var total = (watch * watchPrice) + (phone * phonePrice) + (laptop * laptopPrice);
+    if (valitation(watch) && valitation(phone) && valitation(laptop)) { //valitation
+
+        var total = (watch * watchPrice) + (phone * phonePrice) + (laptop * laptopPrice); //logic
+
     } else {
         total = "Enter your valid Price !!! ";
     }
     return total;
 }
-console.log(budgetCalculator(5, 'd', 2));
+
 
 //Hotel room cost function
 
 function hotelCost(day) {
     var cost = "";
 
-    if (valitation(day)) {
+    if (valitation(day)) { //valitation
 
         if (day <= 10) {
             cost = day * 100;
@@ -55,22 +59,21 @@ function hotelCost(day) {
 }
 
 
-
 // Mega Friend function
 
 function megaFriend(friends) {
     var maxName = friends[0];
-    for (var i = 0; i < friends.length; i++) {
+
+    for (var i = 0; i < friends.length; i++) { //loop
+
         var nameChar = friends[i];
 
-        if (friends[i].length > maxName.length) {
+        if (friends[i].length > maxName.length) { //logic
             maxName = nameChar;
         }
     }
     return maxName;
 }
-// var result = megaFriend(['madi', 'aminulIslam', 'nam', 'mahin', 'zahidCowd'])
-// console.log(result);
 
 //Valitation  function
 
